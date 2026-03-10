@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start Your Project | CORBONLY</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body{font-family:Arial,sans-serif;background:#f5f7fa;}
+.hero{background:linear-gradient(135deg,#006a50,#004d3a);color:white;padding:120px 0;text-align:center;}
+.hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background: rgba(0,0,0,0.25);}
+.section-title{font-weight:700;margin-bottom:50px;color:#006a50;}
+.glass-card{
+    background: rgba(0,106,80,0.15);
+    backdrop-filter: blur(10px);
+    border-radius:20px;
+    padding:40px 20px;
+    color:#006a50; /* changed white text to theme color */
+    transition:0.5s;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+.glass-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.35);
+}
+.icon-circle{
+    font-size:36px;
+    background: rgba(255,255,255,0.25);
+    width:80px;height:80px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px;
+    color:#006a50; /* icon color to theme */
+    transition:0.3s;
+}
+.icon-circle:hover{background:#006a50;color:white;}
+.form-glass{
+    background: rgba(0,106,80,0.1);
+    backdrop-filter: blur(12px);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    color:#006a50; /* form text in theme color */
+}
+.form-glass .form-control:focus{border-color:#006a50;box-shadow:0 0 8px rgba(0,106,80,0.4);}
+.cta{background: linear-gradient(135deg,#006a50,#004d3a);color:white;padding:80px 0;text-align:center;}
+.btn-custom{background:#006a50;color:white;border-radius:50px;transition:0.3s;}
+.btn-custom:hover{background:#004d3a;color:white;}
+</style>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:#006a50;" sticky="top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">CORBONLY</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-2">
+          <a class="nav-link active" style="color:white;" href="overview.html">Overview</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" style="color:white;" href="capabilities.html">Capabilities</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" style="color:white;" href="solutions.html">Solutions</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" style="color:white;" href="insights.html">Insights</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" style="color:white;" href="connect.html">Connect</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" style="color:white;" href="project.html">Start Project</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- HERO -->
+<section class="hero position-relative">
+<div class="container position-relative">
+<h1 class="display-4 fw-bold">Start Your Project With CORBONLY</h1>
+<p class="lead">Let’s build innovative and scalable digital solutions together.</p>
+<a href="#project-form" class="btn btn-light btn-lg mt-4">Get Started</a>
+</div>
+</section>
+
+<!-- STEP BY STEP PROCESS -->
+<section class="py-5">
+<div class="container">
+<h2 class="text-center section-title">Our Project Process</h2>
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="glass-card">
+<div class="icon-circle"><i class="bi bi-lightbulb"></i></div>
+<h5 class="fw-bold">Idea</h5>
+<p>Share your vision and requirements for your project.</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="glass-card">
+<div class="icon-circle"><i class="bi bi-pencil-square"></i></div>
+<h5 class="fw-bold">Planning</h5>
+<p>We strategize and plan the project roadmap and milestones.</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="glass-card">
+<div class="icon-circle"><i class="bi bi-code-slash"></i></div>
+<h5 class="fw-bold">Development</h5>
+<p>Our team builds your project with modern technology and best practices.</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="glass-card">
+<div class="icon-circle"><i class="bi bi-rocket"></i></div>
+<h5 class="fw-bold">Launch</h5>
+<p>We deploy and deliver your project, ensuring high quality and security.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROJECT FORM -->
+<section class="py-5" id="project-form">
+<div class="container">
+<h2 class="text-center section-title">Start Your Project</h2>
+<div class="row justify-content-center">
+<div class="col-lg-7">
+<form class="form-glass">
+<div class="form-floating mb-3">
+<input type="text" class="form-control" id="name" placeholder="Your Name">
+<label for="name">Full Name</label>
+</div>
+<div class="form-floating mb-3">
+<input type="email" class="form-control" id="email" placeholder="Your Email">
+<label for="email">Email Address</label>
+</div>
+<div class="form-floating mb-3">
+<input type="text" class="form-control" id="project" placeholder="Project Type">
+<label for="project">Project Type</label>
+</div>
+<div class="form-floating mb-3">
+<textarea class="form-control" placeholder="Project Details" id="details" style="height:150px"></textarea>
+<label for="details">Project Details</label>
+</div>
+<div class="d-grid">
+<button type="submit" class="btn btn-custom btn-lg">Submit Inquiry</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<div class="container">
+<h2 class="fw-bold mb-3">Ready to Build Your Project?</h2>
+<p class="mb-4">Contact us today and let’s start your journey towards innovation and growth.</p>
+<a href="#project-form" class="btn btn-light btn-lg">Start Now</a>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-white text-[#006a50] pt-5 pb-4">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="mb-4 fw-bold text-uppercase" style="color:#006a50;">CORBONLY</h5>
+        <p style="color:#006a50;">Innovative IT consultancy delivering scalable solutions, analytics, and digital transformation for businesses.</p>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="mb-4 fw-bold text-uppercase" style="color:#006a50;">Quick Links</h5>
+        <p><a href="overview.html" class="text-decoration-none" style="color:#006a50;">Overview</a></p>
+        <p><a href="capabilities.html" class="text-decoration-none" style="color:#006a50;">Capabilities</a></p>
+        <p><a href="solutions.html" class="text-decoration-none" style="color:#006a50;">Solutions</a></p>
+        <p><a href="insights.html" class="text-decoration-none" style="color:#006a50;">Insights</a></p>
+      </div>
+
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="mb-4 fw-bold text-uppercase" style="color:#006a50;">Contact</h5>
+        <p><i class="bi bi-geo-alt-fill me-2" style="color:#006a50;"></i>47 Northern Steel, Sanat Nagar, Budgam, J&K</p>
+        <p><i class="bi bi-envelope-fill me-2" style="color:#006a50;"></i>info@corbonlypvtltd.in</p>
+        <p><i class="bi bi-telephone-fill me-2" style="color:#006a50;"></i>+91 92574 26008</p>
+      </div>
+
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+        <h5 class="mb-4 fw-bold text-uppercase" style="color:#006a50;">Follow Us</h5>
+        <a href="#" style="color:#006a50;" class="me-4"><i class="bi bi-facebook"></i></a>
+        <a href="#" style="color:#006a50;" class="me-4"><i class="bi bi-twitter"></i></a>
+        <a href="#" style="color:#006a50;" class="me-4"><i class="bi bi-linkedin"></i></a>
+        <a href="#" style="color:#006a50;" class="me-4"><i class="bi bi-instagram"></i></a>
+      </div>
+
+    </div>
+
+    <hr class="mb-4" style="border-color:#006a50;">
+
+    <div class="row align-items-center">
+      <div class="col-md-7 col-lg-8">
+        <p style="color:#006a50;">© 2026 CORBONLY PRIVATE LIMITED. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-5 col-lg-4">
+        <div class="text-center text-md-right">
+          <a href="#" style="color:#006a50;" class="text-decoration-none"><i class="bi bi-arrow-up-circle-fill"></i> Back to Top</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
